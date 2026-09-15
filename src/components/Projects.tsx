@@ -29,7 +29,7 @@ const Projects = () => {
           >
             {project.title}
           </Link>
-          {index !== projects.length - 1 ? ", " : ""}&nbsp;
+          &nbsp;&nbsp;
         </span>
       ))}
     </p>
