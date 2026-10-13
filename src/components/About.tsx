@@ -4,7 +4,7 @@ import Projects from "./Projects";
 
 const About = () => {
   return (
-    <div className="text-[#333] dark:text-[#ccc]">
+    <div className="text-[#333] dark:text-[#eee]">
       <p>
         I&apos;m Atul Kumar, a sophomore at IET Lucknow pursuing a
         Bachelor&apos;s degree in Computer Science and Engineering. These days,

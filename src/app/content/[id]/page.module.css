@@ -1,0 +1,133 @@
+.markdown {
+  color: var(--muted-foreground);
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  overflow-wrap: anywhere;
+}
+
+.markdown :global(h1),
+.markdown :global(h2),
+.markdown :global(h3),
+.markdown :global(h4) {
+  color: var(--foreground);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin: 2.5rem 0 1rem;
+}
+
+.markdown :global(h1) {
+  font-size: 2rem;
+}
+
+.markdown :global(h2) {
+  font-size: 1.625rem;
+}
+
+.markdown :global(h3) {
+  font-size: 1.25rem;
+}
+
+.markdown :global(p),
+.markdown :global(ul),
+.markdown :global(ol),
+.markdown :global(blockquote),
+.markdown :global(table),
+.markdown :global(pre) {
+  margin: 1.25rem 0;
+}
+
+.markdown :global(ul),
+.markdown :global(ol) {
+  padding-left: 1.5rem;
+}
+
+.markdown :global(ul) {
+  list-style: disc;
+}
+
+.markdown :global(ol) {
+  list-style: decimal;
+}
+
+.markdown :global(li) {
+  padding-left: 0.35rem;
+}
+
+.markdown :global(li + li) {
+  margin-top: 0.4rem;
+}
+
+.markdown :global(a) {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 0.2em;
+  transition: text-decoration-color 150ms ease;
+}
+
+.markdown :global(a:hover) {
+  text-decoration-color: currentColor;
+}
+
+.markdown :global(blockquote) {
+  border-left: 2px solid var(--border);
+  color: var(--muted-foreground);
+  padding-left: 1.25rem;
+  font-style: italic;
+}
+
+.markdown :global(hr) {
+  border-color: var(--border);
+  margin: 2.5rem 0;
+}
+
+.markdown :global(:not(pre) > code) {
+  background: var(--muted);
+  border-radius: 0.3rem;
+  color: var(--foreground);
+  font-size: 0.9em;
+  padding: 0.15em 0.35em;
+}
+
+.markdown :global(pre) {
+  background: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  color: var(--foreground);
+  overflow-x: auto;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+.markdown :global(pre code) {
+  font: inherit;
+}
+
+.markdown :global(table) {
+  border-collapse: collapse;
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.markdown :global(th),
+.markdown :global(td) {
+  border: 1px solid var(--border);
+  padding: 0.55rem 0.8rem;
+  text-align: left;
+}
+
+.markdown :global(th) {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.markdown :global(img) {
+  border-radius: 0.75rem;
+  height: auto;
+  margin: 2rem auto;
+  max-width: 100%;
+}
